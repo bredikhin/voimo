@@ -1,0 +1,25 @@
+{
+  "verbose": false,
+  "wemo": {
+    "linkUrl": "http://10.0.1.2:49153/setup.xml"
+  },
+  "pocketsphinx": {
+    "options": [
+      "-adcdev", "plughw:0,0",
+      "-inmic", "yes"
+    ]
+  },
+  "activationCommand": "activate",
+  "commands": {
+    "on": {
+      "deviceName": "Bulb1",
+      "capability": "10008",
+      "value": "255:0"
+    },
+    "off": {
+      "deviceName": "Bulb1",
+      "capability": "10008",
+      "value": "255:0"
+    }
+  }
+}

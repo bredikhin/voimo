@@ -1,0 +1,64 @@
+{
+  "verbose": true,
+  "wemo": {
+    "linkUrl": "http://10.0.1.2:49153/setup.xml"
+  },
+  "pocketsphinx": {
+    "options": [
+      "-hmm", "./pocketsphinx/model",
+      "-fsg", "./pocketsphinx/voimo.fsg",
+      "-dict", "./pocketsphinx/voimo.dic",
+      "-kws", "pocketsphinx/voimo.kws",
+      "-kws_threshold", "1e-40",
+      "-adcdev", "plughw:0,0",
+      "-inmic", "yes"
+    ]
+  },
+  "commands": {
+    "включить свет": {
+      "deviceName": "Salon",
+      "capability": "10008",
+      "value": "255:0"
+    },
+    "включить свет в комнате": {
+      "deviceName": "Salon",
+      "capability": "10008",
+      "value": "255:0"
+    },
+    "выключить свет": {
+      "deviceName": "Salon",
+      "capability": "10008",
+      "value": "0:0"
+    },
+    "выключить свет в комнате": {
+      "deviceName": "Salon",
+      "capability": "10008",
+      "value": "0:0"
+    },
+    "приглушить свет": {
+      "deviceName": "Salon",
+      "capability": "10008",
+      "value": "1:0"
+    },
+    "приглушить свет в комнате": {
+      "deviceName": "Salon",
+      "capability": "10008",
+      "value": "1:0"
+    },
+    "включить свет в спальне": {
+      "deviceName": "Bedroom",
+      "capability": "10008",
+      "value": "255:0"
+    },
+    "выключить свет в спальне": {
+      "deviceName": "Bedroom",
+      "capability": "10008",
+      "value": "0:0"
+    },
+    "приглушить свет в спальне": {
+      "deviceName": "Bedroom",
+      "capability": "10008",
+      "value": "1:0"
+    }
+  }
+}

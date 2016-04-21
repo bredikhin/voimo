@@ -1,0 +1,30 @@
+{
+  "name": "voimo",
+  "version": "1.0.0",
+  "description": "Voice + Wemo",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://git@github.com/bredikhin/voimo.git"
+  },
+  "keywords": [
+    "wemo",
+    "voice",
+    "microphone"
+  ],
+  "author": "Ruslan Bredikhin",
+  "license": "MIT",
+  "dependencies": {
+    "play-sound": "0.0.7",
+    "split": "^1.0.0",
+    "wemo-client": "^0.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.3.0",
+    "sinon": "^1.17.3"
+  }
+}
